@@ -40,5 +40,4 @@ SVC was the most promissing and it was fined tuned using GridSearchCV with a sco
 # 6. Model Evaluation:
 The fine tuned SCV model was evaluated against the test set by looking at the f1_score, confussion matrix, ROC curve and AUC values for each target class and feature importance.
 
- <img src="figures/matshow.png" width="200"/>  
-<img src="figures/importance_vs_corr.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
+ <img src="figures/matshow.png" width="200"/> <img src="figures/importance_vs_corr.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
