@@ -32,7 +32,15 @@ For this purpose cross validation was performed using the f1_micro score and str
 
 **Model Performance Comparison**: 
 
-<img src="figures/algo_comparison.png" width="250"/>
+* LogisticRegression(LR)
+* SGDClassifier(SGD)
+* GaussianNB(GNB)
+* Decision Tree Classifier(CART)
+* KNeighborsClassifier(KNC)
+* Support Vector Machine Classifier(SVC)   
+    
+<img src="figures/algo_comparison.png" width="250"/>              
+
 
 # 5. Fine tune:
 SVC was the most promissing and it was fined tuned using GridSearchCV with a score f1_micro score and stratifiedKFold.
