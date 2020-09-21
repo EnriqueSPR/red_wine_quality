@@ -30,16 +30,24 @@ Data distribution was checked using histograms for each attribute and based on t
 # 4. Evaluate different algos.
 For this purpose cross validation was performed using the f1_micro score and stratifiedKFold.
 
-**Model Performance Comparison**: 
-
-* LogisticRegression(LR)
-* SGDClassifier(SGD)
-* GaussianNB(GNB)
-* Decision Tree Classifier(CART)
-* KNeighborsClassifier(KNC)
-* Support Vector Machine Classifier(SVC)   
+**Model Performance Comparison**
+(Model Name - Score):
+* LogisticRegression(LR) - 0.592
+* BaggingClassifier- LR (BC_LR) - 0.590
+* SGDClassifier(SGD) - 0.498
+* GaussianNB(GNB) - 0.542
+* KNeighborsClassifier(KNC) - 0.581
+* DecisionTreeClassifier(CART) - 0.589
+* AdaBoostClassifier -CART(AB-CART) -0.580
+* RandomForestClassifier(RFC) - 0.672
+* AdaBoostClassifier - RFC(AB_RFC) - 0.665
+* ExtraTreesClassifier(ETC) - 0.671
+* AdaBoostClassifier - ExtraTreesClassifier(AB_ETC) - 0.662
+* Support Vector Machine Classifier(SVC) - 0.607
+* BaggingClassifier - SVC(BC_SVC) - 0.601
+* GradientBoostingClassifier (GBC) - 0.610
     
-<img src="figures/algo_comparison.png" width="250"/>              
+<img src="figures/algo_comparison.png" width="500" height="250"/>              
 
 
 # 5. Fine tune:
@@ -48,4 +56,4 @@ SVC was the most promissing and it was fined tuned using GridSearchCV with a sco
 # 6. Model Evaluation:
 The fine tuned SCV model was evaluated against the test set by looking at the f1_score, confussion matrix, ROC curve and AUC values for each target class and feature importance.
 
- <img src="figures/matshow.png" width="200"/> <img src="figures/importance_vs_corr.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
+ <img src="figures/corr_mat.png" width="200"/> <img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
