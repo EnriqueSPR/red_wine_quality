@@ -61,6 +61,11 @@ SVC, RFC and ETC tunned models were used to generate an ensemble model using Sot
 # 7. Model Evaluation:
 The final model was evaluated against the test set by looking at the f1_score, confussion matrix, ROC curve and AUC values for each target class and feature importance.
 
-An accuracy of 0.63 was achieved in the test set.
+An accuracy of 0.63 was achieved in the test set. We could observe that there is room for improvement predicting the classes 2 and 3.
 
+Future work to improve the predictive power of this algo could involve:
+ * Gather more training data. In particular for the classes 2 and 3.
+ * Include more features either by collecting more data or performing feature enginnering
+ * Since our algo struggle particularly in separating the classess 2 and 3, we could consider grouping them both into one "middle quality" category.
+ 
  <img src="figures/corr_mat.png" width="300"/> <img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
