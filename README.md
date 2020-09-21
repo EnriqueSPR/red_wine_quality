@@ -49,11 +49,18 @@ For this purpose cross validation was performed using the f1_micro score and str
     
 <img src="figures/algo_comparison.png" width="500" height="250"/>              
 
+SVC, RFC and ETC were chosen for further tunning and to generate a final ensemble model using a **soft voting classifier** approach.
 
 # 5. Fine tune:
-SVC was the most promissing and it was fined tuned using GridSearchCV with a score f1_micro score and stratifiedKFold.
+SVC, RFC and ETC were tunned using GridSearchCV with a score f1_micro score and stratifiedKFold to obtain a satisfactory accuracy in both the train a test set, while avoiding overfitting.
 
-# 6. Model Evaluation:
-The fine tuned SCV model was evaluated against the test set by looking at the f1_score, confussion matrix, ROC curve and AUC values for each target class and feature importance.
+# 6. Ensemble model 
+
+SVC, RFC and ETC tunned models were used to generate an ensemble model using Sotf VotingClassifier. 
+
+# 7. Model Evaluation:
+The final model was evaluated against the test set by looking at the f1_score, confussion matrix, ROC curve and AUC values for each target class and feature importance.
+
+An accuracy of 0.63 was achieved in the test set.
 
  <img src="figures/corr_mat.png" width="300"/> <img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
