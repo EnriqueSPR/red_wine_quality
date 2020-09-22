@@ -40,14 +40,12 @@ For this purpose cross validation was performed using the f1_micro score and str
 * DecisionTreeClassifier(CART) - 0.589
 * AdaBoostClassifier -CART(AB-CART) -0.580
 * RandomForestClassifier(RFC) - 0.672
-* AdaBoostClassifier - RFC(AB_RFC) - 0.665
 * ExtraTreesClassifier(ETC) - 0.671
-* AdaBoostClassifier - ExtraTreesClassifier(AB_ETC) - 0.662
 * Support Vector Machine Classifier(SVC) - 0.607
 * BaggingClassifier - SVC(BC_SVC) - 0.601
 * GradientBoostingClassifier (GBC) - 0.610
     
-<img src="figures/algo_comparison.png" width="500" height="250"/>              
+<img src="figures/algo_comparison.png" width="600" height="250"/>              
 
 SVC, RFC and ETC were chosen for further tunning and to generate a final ensemble model using a **soft voting classifier** approach.
 
