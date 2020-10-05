@@ -73,7 +73,7 @@ Future work to improve the predictive power of this model could be:
  * Include more features either by collecting more data or performing feature enginnering
  * Since our algo struggle particularly in separating the classess 2 and 3, we could consider grouping them both into one "middle quality" category.
  
- * Also, what about using neural networks to solve thi classification problem? I explored this in a last section of this project.
+ * Also, what about using neural networks to solve thi classification problem? I explored this option in a last section of this project.
  
  # 8. Designing a Neural Network (NN):
  
