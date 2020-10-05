@@ -65,10 +65,26 @@ The final model was evaluated against the test set by looking at the f1_score, c
 An accuracy of 0.64 was achieved in the test set. We could observe that there is room for improvement predicting the classes 2 and 3.
 
 
- <img src="figures/corr_mat.png" width="300"/> <img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
+<img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
  
  
 Future work to improve the predictive power of this model could be:
  * Gather more training data. In particular for the classes 2 and 3.
  * Include more features either by collecting more data or performing feature enginnering
  * Since our algo struggle particularly in separating the classess 2 and 3, we could consider grouping them both into one "middle quality" category.
+ 
+ * Also, what about using neural networks to solve thi classification problem? I explored this next.
+ 
+ # 8. Designing a Neural Network (NN):
+ 
+ * A NN composed of 7 layers was designed to tackle this classification problem:
+   * 1 x Input layer: Shape = 8
+   * 4 x Dense layers: Composed of 300, 200, 100 and 50 nodes respectively, Activation function = Selu, kernel_initializer='glorot_uniform' and L2 regularization (0.01) 
+   * 1 x Dropout layer for further regularization.
+   * 1 x Output layer: 6 nodes with activation="softmax"
+   
+ After compiling and training the model we obtained the following results upon the test set as summarized in the confussion matrix of the NN (left), compared to the results obtained on the ensemble model (See figures below).
+ 
+ <img src="figures/corr_mat_NN.png" width="400"/>  <img src="figures/corr_mat.png" width="400"/>   
+ 
+ We can see that our NN did not perform as well as our previous ensemble model.
