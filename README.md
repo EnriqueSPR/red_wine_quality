@@ -65,7 +65,7 @@ The final model was evaluated against the test set by looking at the f1_score, c
 An accuracy of 0.64 was achieved in the test set. We could observe that there is room for improvement predicting the classes 2 and 3.
 
 
-<img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/> <img src="figures/ROC.png" width="250"/>  
+<img src="figures/ROC.png" width="250"/>  <img src="figures/importance_vs_corr_RFC.png" height="250" width="450"/>
  
  
 Future work to improve the predictive power of this model could be:
