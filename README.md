@@ -1,7 +1,8 @@
 # Predicting red wine quality.
+
 Supervised Multi-classification ML problem -> Predicting wine quality
 
-[**See project here**](https://nbviewer.jupyter.org/github/EnriqueSPR/red_wine_quality/blob/master/red_wine.ipynb)
+[**See ful project here.**](https://nbviewer.jupyter.org/github/EnriqueSPR/red_wine_quality/blob/master/red_wine.ipynb)
 
 In this project we will tackle a multi-classification problem using supervised ML on a well known dataset about red wine quality. See [here](https://www.kaggle.com/sh6147782/winequalityred). This dataset contains quality parameters for 1596 red-wines, which we can use to build a model that predicts red wine quality.
  
